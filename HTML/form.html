@@ -1,41 +1,67 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a form</title>
+</head>
 <body>
     <form>
-        <label for="name">Name:</label>
-        <input type="text" required>
-        <br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" required>
-        <br><br>
-		
-		<label for="password">Password:</label>
-        <input type="password" required>
-        <br><br>
-		
-		<label for="gender">Gender:</label>
-		<select>
-			<option>Male</option>
-			<option>Female</option>
-		</select>
-		<br><br>
-		
-		<label for="Department">Department:</label>
-		<select>
-			<option>CSE</option>
-			<option>EEE</option>
-			<option>IPE</option>
-			<option>Pharmacy</option>
-		</select>
-		<br><br>
-
-        <label for="address">Address:</label>
-        <textarea></textarea>
-        <br><br>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Submit</button>
-        <button type="submit">Submit</button>
+        <!-- First Name -->
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <!-- Last Name -->
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br>
+        <!--ID-->
+        <label for="id">ID</label><br>
+        <input type="number" id="id" name="id"><br>
+        <!--Password-->
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <!--Gender-->
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="Male">Male</label><br>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="Female">Female</label><br>
+        <input type="radio" name="gender" id="Others" value="Others">
+        <label for="Others">Others</label><br>
+        <br>
+        <!--Address-->
+        <label for="address">Address</label><br>
+        <input type="text" id="address" name="address"><br>
+        <!--Email-->
+        <label for="Email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <br>
+        <!--Department-->
+        <label for="department">Department</label><br>
+        <select name="department" id="department">
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="IPE">IPE</option>
+            <option value="BBA">BBA</option>
+            <option value="English">English</option>
+            <option value="Law">Law</option>
+            <option value="Pharmacy">Pharmacy</option>
+        </select><br>
+        <br>
+        <!--Skill-->
+        <label for="skill">Skill</label><br>
+        <input type="checkbox" name="MSWord" id="MSWord" value="MS Word">
+        <label for="MSWord">MS Word</label><br>
+        <input type="checkbox" name="Excel" id="Excel" value="Excel">
+        <label for="Excel">Excel</label><br>
+        <input type="checkbox" name="Powerpoint" id="Powerpoint" value="Powerpoint">
+        <label for="Powerpoint">Powerpoint</label><br>
+        <br>
+        <!--Submit Button-->
+        <input type="submit" name="submit" id="submit">
+        <!--Reset Button-->
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>
