@@ -6,62 +6,92 @@
     <title>This is a form</title>
 </head>
 <body>
-    <form>
-        <!-- First Name -->
-        <label for="fname">First Name</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <!-- Last Name -->
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <br>
-        <!--ID-->
-        <label for="id">ID</label><br>
-        <input type="number" id="id" name="id"><br>
-        <!--Password-->
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password"><br>
-        <br>
-        <!--Gender-->
-        <label for="gender">Gender</label><br>
-        <input type="radio" name="gender" id="Male" value="Male">
-        <label for="Male">Male</label><br>
-        <input type="radio" name="gender" id="Female" value="Female">
-        <label for="Female">Female</label><br>
-        <input type="radio" name="gender" id="Others" value="Others">
-        <label for="Others">Others</label><br>
-        <br>
-        <!--Address-->
-        <label for="address">Address</label><br>
-        <input type="text" id="address" name="address"><br>
-        <!--Email-->
-        <label for="Email">Email</label><br>
-        <input type="email" id="email" name="email"><br>
-        <br>
-        <!--Department-->
-        <label for="department">Department</label><br>
-        <select name="department" id="department">
-            <option value="CSE">CSE</option>
-            <option value="EEE">EEE</option>
-            <option value="IPE">IPE</option>
-            <option value="BBA">BBA</option>
-            <option value="English">English</option>
-            <option value="Law">Law</option>
-            <option value="Pharmacy">Pharmacy</option>
-        </select><br>
-        <br>
-        <!--Skill-->
-        <label for="skill">Skill</label><br>
-        <input type="checkbox" name="MSWord" id="MSWord" value="MS Word">
-        <label for="MSWord">MS Word</label><br>
-        <input type="checkbox" name="Excel" id="Excel" value="Excel">
-        <label for="Excel">Excel</label><br>
-        <input type="checkbox" name="Powerpoint" id="Powerpoint" value="Powerpoint">
-        <label for="Powerpoint">Powerpoint</label><br>
-        <br>
-        <!--Submit Button-->
-        <input type="submit" name="submit" id="submit">
-        <!--Reset Button-->
-        <button type="reset">Reset</button>
-    </form>
+    <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <table>
+                <!--First Name-->
+                 <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <!--Last Name-->
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <!--ID-->
+                <tr>
+                    <td>ID</td>
+                    <td><input type="number" id="id" name="id"></td>
+                </tr>
+                <!--Password-->
+                <tr>
+                    <td>Password</td>
+                    <td> <input type="password" id="password" name="password"></td>
+                </tr>
+                <!--Gender-->
+                <tr>
+                    <td>Gender</td>
+                    <td>        
+                        <input type="radio" name="gender" id="Male" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="Others" value="Others">
+                        <label for="Others">Others</label>
+                    </td>
+                </tr>
+                <!--Address-->
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <!--Email-->
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <!--Department-->
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        <select name="department" id="department">
+                            <option value="CSE">CSE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="IPE">IPE</option>
+                            <option value="BBA">BBA</option>
+                            <option value="English">English</option>
+                            <option value="Law">Law</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--Skill-->
+                <tr>
+                    <td>Skill</td>
+                    <td>
+                        <input type="checkbox" name="MSWord" id="MSWord" value="MS Word">
+                        <label for="MSWord">MS Word</label>
+                        <input type="checkbox" name="Excel" id="Excel" value="Excel">
+                        <label for="Excel">Excel</label>
+                        <input type="checkbox" name="Powerpoint" id="Powerpoint" value="Powerpoint">
+                        <label for="Powerpoint">Powerpoint</label>
+                    </td>
+                </tr>
+                <!--Submit Button-->
+                <tr>
+                    <td></td>
+                    <td>
+                        <br>
+                        <input type="submit" name="submit" id="submit">
+                        <button type="reset">Reset</button>
+                        <input type="button" name="button" id="button" value="Button">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>   
+    </form>  
 </body>
 </html>
