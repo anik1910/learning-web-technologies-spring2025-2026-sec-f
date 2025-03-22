@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <p>Sign in with your organizational ID number</p>
+    <input type="text" id="username" placeholder="User Name"><br>
+    <p id="usernameerror"></p>
+
+    <input type="password" id="password" placeholder="Password"><br>
+    <p id="passworderror"></p>
+    <input type="button" value="Submit" onclick="usernamevalidation(), passwordvalidation()">
+
+    <script>
+        function usernamevalidation()
+        {
+            let username = document.getElementById('username').value;
+            let usernameerror = document.getElementById('usernameerror');
+            if (username == "")
+            {
+                usernameerror.innerHTML = "The User Name field is required";
+                usernameerror.style.color = 'red'; 
+            }
+            else
+            {
+                usernameerror.innerHTML = "";
+            }
+        }
+        function passwordvalidation()
+        {
+            let password = document.getElementById('password').value;
+            let passworderror = document.getElementById('passworderror');
+            if(password == "")
+            {
+                passworderror.innerHTML = "The Password field is required"
+                passworderror.style.color = 'red';
+            }
+            else
+            {
+                passworderror.innerHTML = "";
+            }
+        }
+    </script>
+    
+</body>
+</html>
