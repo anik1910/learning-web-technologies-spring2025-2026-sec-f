@@ -4,11 +4,11 @@ function emailvalidation()
     let error = document.getElementById('error');
 
     if (email.trim() == "")
-        {
-            error.innerHTML = "The field is empty";
-            error.style.color = 'red';
-            return;
-        }
+    {
+        error.innerHTML = "The field is empty";
+        error.style.color = 'red';
+        return;
+    }
 
     if (!(email[0] >= 'A' && email[0] <= 'Z') && !(email[0] >= 'a' && email[0] <= 'z')&& !(email[0] >= '0' && email[0] <= '9'))
     {

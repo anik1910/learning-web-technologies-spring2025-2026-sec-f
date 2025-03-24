@@ -4,11 +4,11 @@ function namevalidation()
     let error = document.getElementById('error');
 
     if (name.trim() == "")
-        {
-            error.innerHTML = "The field is empty";
-            error.style.color = 'red';
-            return;
-        }
+    {
+        error.innerHTML = "The field is empty";
+        error.style.color = 'red';
+        return;
+    }
     let word = name.split(" ");
     let wordCount = 0;
 
