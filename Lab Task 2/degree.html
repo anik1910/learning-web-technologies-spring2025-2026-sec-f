@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Validation</title>
+
+    <script src="degree.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Degree</legend>
+
+        <input type="checkbox" id="ssc" name="degree">
+        <label for="ssc">SSC</label>
+
+        <input type="checkbox" id="hsc" name="degree">
+        <label for="hsc">HSC</label>
+
+        <input type="checkbox" id="bsc" name="degree">
+        <label for="bsc">BSc</label>
+        <br>
+        <p id="error"></p>
+        <input type="button" value="Submit" onclick="degreevalidation()"> 
+    </fieldset>  
+</body>
+</html>

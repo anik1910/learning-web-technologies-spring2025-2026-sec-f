@@ -1,12 +1,12 @@
-function gendervalidation()
+function degreevalidation()
 {
-    let genders = document.getElementsByName("gender");
+    let degrees = document.getElementsByName("degree");
     let error = document.getElementById('error')
     let isSelected = false;
 
-    for (let gender of genders)
+    for (let degree of degrees)
     {
-        if(gender.checked)
+        if(degree.checked)
         {
             isSelected = true;
             break;
@@ -14,7 +14,7 @@ function gendervalidation()
     }
     if(!isSelected)
     {
-        error.innerHTML = "Please select a gender";
+        error.innerHTML = "Please select a Degree";
         error.style.color = 'red';
     }
     else

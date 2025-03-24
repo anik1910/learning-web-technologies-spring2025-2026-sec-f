@@ -10,17 +10,18 @@
 <body>
     <fieldset>
         <legend>Gender</legend>
-        
-        <input type="radio" id="male">
+
+        <input type="radio" id="male" name="gender">
         <label for="male">Male</label>
 
-        <input type="radio" id="female">
+        <input type="radio" id="female" name="gender">
         <label for="female">Female</label>
 
-        <input type="radio" id="other">
+        <input type="radio" id="other" name="gender">
         <label for="other">Other</label>
         <br>
-        <input type="button" value="Submit" onclick="emailvalidation()"> 
+        <p id="error"></p>
+        <input type="button" value="Submit" onclick="gendervalidation()"> 
     </fieldset>  
 </body>
 </html>
